@@ -5,6 +5,10 @@
         <title>Good Life  </title>
     
     <link href="css/style02.css" rel="stylesheet" type="text/css">
+         <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+        
+        
    <style type="text/css">
       body{
     font-style: italic; 
@@ -26,6 +30,24 @@ h1{
 }
 
    </style>
+        
+       <!--2.0-->
+    <style type="text/css">
+      #cube{
+          width: 319px;
+          height: 351px;
+          padding: 0.5em;
+          background-color: lightgreen;
+          color: black;
+      }
+    
+  </style>
+  <script type="text/javascript">
+      $(function(){
+          $("#cube").draggable();
+          
+      });
+  </script>  
     </head>
     <!--contenido-->
 
@@ -37,6 +59,12 @@ h1{
               Vínculo correcto
             <img src="img/check.png" width="30" height="30">
           </h1>
+        
+         <!-- contenido 2.0 -->
+          <div id="cube" class="ui-widget-content" >
+            <img src="img/dino.png" width="219px" height="251px">
+            <p>*Arrastra el dinosaurio*</p>
+        </div>
 
           
 
